@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>TheBestTeaUfa</title>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+
+        <!-- SPRITE -->
+        <svg style="display: none;">
+            <symbol id="vk" viewBox="0 0 16 16">
+                <path d="M7.75,12.5h1.218c0,0,0.271-0.031,0.409-0.187C9.504,12.17,9.5,11.901,9.5,11.901s0.067-1.216,0.625-1.401c0.55-0.182,1.172,1.174,1.922,1.712c0.567,0.407,0.997,0.318,0.997,0.318l1.681-0.03c0,0,1.073-0.09,0.576-0.953c-0.041-0.07-0.246-0.678-1.446-1.844c-1.256-1.221-1.088-0.449,0.425-2.561c0.922-1.286,1.316-2.081,1.175-2.408C15.354,4.5,14.668,4.5,14.668,4.5l-2,0.015c0,0-0.168-0.024-0.292,0.054c-0.122,0.076-0.199,0.254-0.199,0.254s-0.357,0.495-0.833,1.342C10.34,7.95,9.938,7.469,9.774,7.359C9.391,7.101,9.488,6.5,9.488,5.768c0-1.731,0.251-1.952-0.488-2.139c-0.245-0.062-0.681-0.103-1.309-0.11C6.887,3.51,6.331,3.566,5.945,3.765C5.689,3.897,5.491,4.189,5.611,4.207c0.149,0.021,0.487,0.095,0.665,0.35C6.508,4.886,6.5,5.125,6.5,5.125s0.133,2.037-0.31,2.291C5.886,7.589,5.342,7.763,4.447,6.144c-0.459-0.83-0.806-1.248-0.806-1.248S3.575,4.725,3.455,4.633C3.31,4.522,3.109,4.5,3.109,4.5L0.965,4.501c0,0-0.322,0.009-0.439,0.156C0.42,4.788,0.517,5.057,0.517,5.057s1.678,3.536,3.578,5.607C5.84,12.562,7.75,12.5,7.75,12.5z"/>
+            </symbol>
+        </svg>
+
+        <svg style="display: none;">
+            <symbol id="telegram" viewBox="0 0 24 24">
+                <path d="M21.45,3.377c-0.485-0.415-1.209-0.492-1.935-0.205c-0.45,0.177-7.501,3.144-14.074,5.911L3.27,9.997c-0.841,0.341-1.267,0.894-1.267,1.641c0,0.523,0.222,1.234,1.278,1.652l3.667,1.467c0.317,0.951,1.053,3.159,1.238,3.746c0.11,0.348,0.388,1.225,1.09,1.43c0.144,0.049,0.294,0.074,0.447,0.074c0.443,0,0.762-0.206,0.918-0.326l2.329-1.97l2.831,2.617C15.91,20.439,16.486,21,17.261,21c0.967,0,1.701-0.805,1.854-1.584c0.083-0.427,2.812-14.129,2.812-14.127C22.172,4.19,21.733,3.62,21.45,3.377z M17.166,18.866l-4.137-3.826l-3.03,2.565c-0.359-1.107-1.301-3.922-1.301-3.922l-0.146-0.439l-4.021-1.608l1.687-0.709c4.299-1.81,11.956-5.033,13.692-5.755C19.533,7.062,17.478,17.379,17.166,18.866z"/><path d="M16.8,8c-0.125,0-0.294,0.119-0.384,0.175c-1.288,0.803-7.746,4.478-9.517,5.484C7.398,13.859,7.75,14,7.75,14s1.151,3.445,1.39,4.2c0.239,0.756,0.431,0.774,0.431,0.774c0.053,0.023,0.105,0.032,0.153,0.032c0.039,0,0.066-0.014,0.099-0.023L11,14.375c0,0,5.363-5.428,5.686-5.744C16.946,8.378,17,8.289,17,8.201C17,8.084,16.939,8,16.8,8z"/>
+            </symbol>
+        </svg>
+
+        <svg style="display: none;">
+            <symbol id="instagram" viewBox="0 0 24 24">
+                <path d="M16,3H8C5.2,3,3,5.2,3,8v8c0,2.8,2.2,5,5,5h8c2.8,0,5-2.2,5-5V8C21,5.2,18.8,3,16,3z M19,16c0,1.7-1.3,3-3,3H8	c-1.7,0-3-1.3-3-3V8c0-1.7,1.3-3,3-3h8c1.7,0,3,1.3,3,3V16z"/><path d="M12,7c-2.8,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5S14.8,7,12,7z M12,15c-1.7,0-3-1.3-3-3s1.3-3,3-3s3,1.3,3,3S13.7,15,12,15z M17,6c-0.6,0-1,0.4-1,1s0.4,1,1,1s1-0.4,1-1S17.6,6,17,6z"/>
+            </symbol>
+        </svg>
+        <!-- ----- -->
+
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <b>TheBestTea Ufa</b>
+                    </div>
+                    
+                    <nav class="nav" id="nav">
+                        <a class="nav__link" href="#" data-scroll="#features">Преимущества</a>
+                        <a class="nav__link" href="#" data-scroll="#product">Товары</a>
+                        <a class="nav__link" href="#" data-scroll="#team">Команда</a>
+                        <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
+                        <a class="nav__link" href="#" data-scroll="#request">Заявка</a>
+                    </nav>
+                    <!-- menu -->
+                    <button class="burger" type="button" id="navToggle">
+                        <span class="burger__item">Menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="intro" id="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <h1 class="intro__title">Мы первые на рынке по качеству чайных товаров в РФ</h1>
+                    <h2 class="intro__subtitle">Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий.</h2>
+                    <a class="btn btn--red" id="pop_up_open" href="#">Оставить заявку</a>
+                    <div class="pop_up" id="pop_up">
+                        <div class="pop_up_container">
+                            <div class="pop_up_body" id="pop_up_body">
+                                <p>Оставить заявку</p>
+                                <form action="">
+                                    <input type="text" placeholder="Имя">
+                                    <input type="text" placeholder="Номер телефона">
+                                    <button>Отправить</button>
+                                </form>
+                                <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---Преимущества-->>
+        <div class="container" id="features">
+            <div class="features">
+                <div class="features__item">
+                    <img class="features__icon" src="img/free-icon-delivery-1584805.png" alt="">
+                    <h4 class="features__title">Бесплатная доставка</h4>
+                    <div class="features__text">По городу Уфа доставка Бесплатная. До 10км от города 2000, дальше - цена договорная</div>
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="img/free-icon-best-price-2854306.png" alt="">
+                    <h4 class="features__title">Лучшие цены</h4>
+                    <div class="features__text">Мы постоянно пытаемся оптимизировать пути доставки и производства для лучшего предложения для вас </div>
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="img/free-icon-license-2679045.png" alt="">
+                    <h4 class="features__title">У нас все законно</h4>
+                    <div class="features__text">Мы работаем согласно законодательству РФ и всегда предоставляем все отчеты</div>
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="img/free-icon-packing-3757490.png" alt="">
+                    <h4 class="features__title">Качественна упаковка</h4>
+                    <div class="features__text">Мы закупаем качественные материалы для упаковки чтобы чай попал вам в руки без проблем и в наилучшем состоянии</div>
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="img/free-icon-quality-control-5430584.png" alt="">
+                    <h4 class="features__title">Отличное качество</h4>
+                    <div class="features__text">Мы регулярно проверяем наших поставщиков и тчательно следим за качеством товара</div>
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="img/free-icon-reputation-7346342.png" alt="">
+                    <h4 class="features__title">Растущая популярность</h4>
+                    <div class="features__text">Мы всегда рады новым покупателям и делаем все возможное чтобы продолжать сотрудничество</div>
+                </div>
+            </div><!--Преимущества-->
+        </div>
+
+    <div class="product" id="product">
+        <div class="product__item">
+            <img class="product__photo" src="img/tea_product/tea1.jpg" alt="" width="650">
+            <div class="product__content">
+                <div class="product__title">Название продукта</div>
+                <div class="product__text">описание продукта</div>
+            </div>
+        </div>
+        <div class="product__item">
+            <img class="product__photo" src="img/tea_product/tea2.jpg" alt="" width="650">
+            <div class="product__content">
+                <div class="product__title">Название продукта</div>
+                <div class="product__text">описание продукта</div>
+            </div>
+        </div>
+        <div class="product__item">
+            <img class="product__photo" src="img/tea_product/tea3.jpg" alt="" width="650">
+            <div class="product__content">
+                <div class="product__title">Название продукта</div>
+                <div class="product__text">описание продукта</div>
+            </div>
+        </div>
+        <div class="product__item">
+            <img class="product__photo" src="img/tea_product/tea4.jpg" alt="" width="750">
+            <div class="product__content">
+                <div class="product__title">Название продукта</div>
+                <div class="product__text">описание продукта</div>
+            </div>
+        </div>
+        <div class="product__item">
+            <img class="product__photo" src="img/tea_product/tea5.jpg" alt="" width="650">
+            <div class="product__content">
+                <div class="product__title">Название продукта</div>
+                <div class="product__text">описание продукта</div>
+            </div>
+        </div>
+        <div class="product__item">
+            <img class="product__photo" src="img/tea_product/tea6.jpg" alt="" width="650">
+            <div class="product__content">
+                <div class="product__title">Название продукта</div>
+                <div class="product__text">описание продукта</div>
+            </div>
+        </div>
+        <div class="product__item">
+            <img class="product__photo" src="img/tea_product/tea7.jpg" alt="" width="650">
+            <div class="product__content">
+                <div class="product__title">Название продукта</div>
+                <div class="product__text">описание продукта</div>
+            </div>
+        </div>
+        <div class="product__item">
+            <img class="product__photo" src="img/tea_product/tea8.jpg" alt="" width="550">
+            <div class="product__content">
+                <div class="product__title">Название продукта</div>
+                <div class="product__text">описание продукта</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team" id="team">
+        <div class="container">
+            <div class="team__inner">
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team1.png" alt="">
+                    <div class="team__name">Железнов Тимофей</div>
+                    <div class="team__prof">Генеральный директор</div>
+                    <div class="team__text">
+                        <p>
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
+                        </p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#telegram"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team2.png" alt="">
+                    <div class="team__name">Корчагина Оксана</div>
+                    <div class="team__prof">Начальник отдела сбыта</div>
+                    <div class="team__text">
+                        <p>
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
+                        </p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#telegram"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team3.png" alt="">
+                    <div class="team__name">Исламгалеев Денис</div>
+                    <div class="team__prof">Финансовый директор</div>
+                    <div class="team__text">
+                        <p>
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
+                        </p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#telegram"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team4.png" alt="">
+                    <div class="team__name">Лукьянова Маргарита</div>
+                    <div class="team__prof">Контроля качества</div>
+                    <div class="team__text">
+                        <p>
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
+                        </p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#telegram"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div><!--  team__inner -->
+        </div><!--  container -->
+    </div>
+
+
+
+    <!-- reviews -->
+    <div class="reviews" id="reviews">
+        <div class="container">
+
+            <div class="reviews__slider" id="reviewsSlider">
+                
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="img/reviews/rew1.png"  alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">
+                                "Что консультация с широким активом способствует подготовки и реализации обучения кадров."
+                            </div>
+                            <div class="reviews__author">
+                                Мария Вольвина - владелец торговой сети TiTotum
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="img/reviews/rew1.png"  alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">
+                                "Это ну уж очень необычный и интерересняй и даже уникальный комментарий"
+                            </div>
+                            <div class="reviews__author">
+                                Мария Вольвина - владелец торговой сети TiTotum
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="img/reviews/rew1.png"  alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">
+                                "Это ну уж очень необычный и интерересняй и даже уникальный комментарий"
+                            </div>
+                            <div class="reviews__author">
+                                Мария Вольвина - владелец торговой сети TiTotum
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- REQUEST -->
+    <div class="request" id="request">
+        <div class="container">
+            <h3 class="request__title">Мы всегда сможем подобрать для вас лучшее предложение</h3>
+            <div class="request__text"><p>Оставьте заявку и мы максимально быстро с вами свяжемся</p></div>
+            <a href="#" class="btn btn--red btn--long">Оставить заявку</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <div class="footer__title">Наши адреса</div>
+                    <address class="footer__address">
+                        <div>Уфа, Клавдии Абрамовой, д 6</div>
+                        <div>Уфа, Проспект октября, д 70</div>
+                    </address>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__title">Контакты</div>
+                    <div class="social social--footer">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#telegram"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__title">Блок текста в футере</div>
+                    <div class="footer__text">Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и тёплый кров.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
+        
+    </body>
+</html>
